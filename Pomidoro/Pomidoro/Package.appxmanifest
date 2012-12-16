@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
+  <Identity Name="56837jj09.Pomidoro" Publisher="CN=5EA48D99-E04A-4973-A0A7-DA6F39BAEABE" Version="1.0.0.2" />
+  <Properties>
+    <DisplayName>Pomidoro</DisplayName>
+    <PublisherDisplayName>jj09</PublisherDisplayName>
+    <Logo>Assets\StoreLogo.png</Logo>
+  </Properties>
+  <Prerequisites>
+    <OSMinVersion>6.2.1</OSMinVersion>
+    <OSMaxVersionTested>6.2.1</OSMaxVersionTested>
+  </Prerequisites>
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+  <Applications>
+    <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="Pomidoro.App">
+      <VisualElements DisplayName="Pomidoro" Logo="Assets\Logo.png" SmallLogo="Assets\SmallLogo.png" Description="This is a timer, which can be used in the application of 'Pomodoro Technique'. Once you start 'pomodoro' (25 minutes), the application starts count down and informs about the end by tile and toast notifications. You can set your own pomidoro image from your local images." ForegroundText="light" BackgroundColor="#464646" ToastCapable="true">
+        <DefaultTile ShowName="allLogos" />
+        <SplashScreen Image="Assets\SplashScreen.png" />
+        <InitialRotationPreference>
+          <Rotation Preference="portrait" />
+          <Rotation Preference="landscape" />
+          <Rotation Preference="portraitFlipped" />
+          <Rotation Preference="landscapeFlipped" />
+        </InitialRotationPreference>
+      </VisualElements>
+    </Application>
+  </Applications>
+</Package>

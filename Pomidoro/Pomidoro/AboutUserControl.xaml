@@ -1,0 +1,36 @@
+﻿<UserControl
+    x:Class="Pomidoro.AboutUserControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Pomidoro"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignHeight="300"
+    d:DesignWidth="400">
+    
+    <Grid>
+        <StackPanel>
+            <TextBlock Text="Pomidoro" 
+                       FontFamily="Segoe UI" 
+                       FontWeight="SemiLight" 
+                       FontSize="26.667" />
+            <TextBlock Text="This is a timer, which can be used in the application of 'Pomodoro Technique'."
+                       TextWrapping="Wrap"
+                       FontFamily="Segoe UI" 
+                       FontWeight="SemiLight" 
+                       FontSize="18"/>
+            <TextBlock Text="Once you start 'pomodoro' (25 minutes), the application starts count down and informs  
+                       about the end by tile and toast notifications." 
+                       TextWrapping="Wrap"
+                       FontFamily="Segoe UI" 
+                       FontWeight="SemiLight" 
+                       FontSize="18" />
+            <TextBlock Text="You can set your own pomidoro image from your local images." 
+                       TextWrapping="Wrap"
+                       FontFamily="Segoe UI" 
+                       FontWeight="SemiLight" 
+                       FontSize="18" />
+        </StackPanel>
+    </Grid>
+</UserControl>
