@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
-  <Identity Name="56837jj09.Pomidoro" Publisher="CN=5EA48D99-E04A-4973-A0A7-DA6F39BAEABE" Version="1.0.0.2" />
+  <Identity Name="56837jj09.Pomidoro" Publisher="CN=5EA48D99-E04A-4973-A0A7-DA6F39BAEABE" Version="1.0.0.3" />
   <Properties>
     <DisplayName>Pomidoro</DisplayName>
     <PublisherDisplayName>jj09</PublisherDisplayName>
@@ -15,7 +15,7 @@
   </Resources>
   <Applications>
     <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="Pomidoro.App">
-      <VisualElements DisplayName="Pomidoro" Logo="Assets\Logo.png" SmallLogo="Assets\SmallLogo.png" Description="This is a timer, which can be used in the application of 'Pomodoro Technique'. Once you start 'pomodoro' (25 minutes), the application starts count down and informs about the end by tile and toast notifications. You can set your own pomidoro image from your local images." ForegroundText="light" BackgroundColor="#464646" ToastCapable="true">
+      <VisualElements DisplayName="Pomidoro" Logo="Assets\Logo.png" SmallLogo="Assets\SmallLogo.png" Description="This is a timer, which can be used in the application of 'Pomodoro Technique'. Once you start 'pomodoro' (25 minutes), the application starts count down and informs about the end by tile and toast notifications. You can set your own pomidoro image from your local images. You are able to change pomodoro time to custom value (in mins)." ForegroundText="light" BackgroundColor="#464646" ToastCapable="true">
         <DefaultTile ShowName="allLogos" />
         <SplashScreen Image="Assets\SplashScreen.png" />
         <InitialRotationPreference>

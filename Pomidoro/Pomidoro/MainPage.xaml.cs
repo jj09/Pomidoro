@@ -143,7 +143,7 @@ namespace Pomidoro
             if (ThreadPoolSample.PeriodicTimer != null)
             {
                 ThreadPoolSample.PeriodicTimer.Cancel();
-                ThreadPoolSample.PeriodicTimerCount = 1500;
+                ThreadPoolSample.PeriodicTimerCount = ThreadPoolSample.DefaultPeriodicTimerCount;
                 UpdateUI(Status.Canceled);
             }
         }

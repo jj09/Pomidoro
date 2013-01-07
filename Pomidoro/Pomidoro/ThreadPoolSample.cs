@@ -23,6 +23,7 @@ namespace Pomidoro
         {
             public static ThreadPoolTimer PeriodicTimer;
             public static MainPage MainPage;
+            public static long DefaultPeriodicTimerCount = 1500;
             public static long PeriodicTimerCount = 1500;
             public static int PeriodicTimerMilliseconds = 1000;
             public static string PeriodicTimerInfo = "";

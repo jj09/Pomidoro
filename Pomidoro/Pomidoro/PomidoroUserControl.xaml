@@ -7,25 +7,27 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
     d:DesignHeight="300"
-    d:DesignWidth="400">
-    
+    d:DesignWidth="400"
+    >
+
     <Grid>
         <StackPanel x:Name="FlyoutContent">
+            <StackPanel Orientation="Horizontal" Margin="0,0,0,20">
+                <TextBlock Text="Work length: " FontSize="20" Margin="0,0,10,0" VerticalAlignment="Center"/>
+                <TextBox Name="Time" TextChanged="Time_TextChanged" VerticalAlignment="Center"/>
+                <TextBlock Text="mins " FontSize="20" Margin="10,0,0,0" VerticalAlignment="Center"/>
+            </StackPanel>
             <Button 
                 Name="ChoosePomidoroButton" 
                 Click="ChoosePomidoroButton_Click"
                 Content="Choose pomidoro image..."    
-                Background="LightGray"
-                Foreground="Black"
-                BorderBrush="Black"           
+                        
                 />
             <Button 
                 Name="DefaultPomidoroButton" 
                 Click="DefaultPomidoroButton_Click"
                 Content="Set default pomidoro image"  
-                Background="LightGray"
-                Foreground="Black"
-                BorderBrush="Black"
+                
                 />
         </StackPanel>
     </Grid>

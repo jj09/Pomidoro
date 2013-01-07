@@ -23,6 +23,7 @@ namespace Pomidoro
         public PomidoroUserControl()
         {
             this.InitializeComponent();
+            this.Time.Text = (ThreadPoolSample.DefaultPeriodicTimerCount / 60).ToString();
         }
 
         private async void ChoosePomidoroButton_Click(object sender, RoutedEventArgs e)
@@ -81,6 +82,22 @@ namespace Pomidoro
             BitmapImage defaultImage = new BitmapImage();
             defaultImage.UriSource = new Uri("ms-appx:///Images/Pomidoro.png");
             ThreadPoolSample.MainPage.PomidoroImage.Source = defaultImage;
+        }
+
+        private void Time_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            int parsed = 0;
+            if (int.TryParse(this.Time.Text, out parsed) && parsed>0)
+            {
+                ThreadPoolSample.DefaultPeriodicTimerCount = parsed * 60;
+
+                if (ThreadPoolSample.PeriodicTimerStatus != Status.Started && ThreadPoolSample.PeriodicTimerStatus != Status.Completed)
+                {
+                    ThreadPoolSample.PeriodicTimerCount = ThreadPoolSample.DefaultPeriodicTimerCount;
+                    ThreadPoolSample.MainPage.UpdateUI(Status.Canceled);
+                }
+            }
+
         }
     }
 }

@@ -99,14 +99,18 @@ namespace Pomidoro
             args.Request.ApplicationCommands.Add(about);
 
             // Add an Pomidoro settings
-            var pomidoro = new SettingsCommand("pomidoro", "Pomidoro image", (handler) =>
+            var pomidoro = new SettingsCommand("pomidoro", "Pomidoro options", (handler) =>
             {
                 var settings = new SettingsFlyout();
-                settings.Content = new PomidoroUserControl();
-                //settings.HeaderBrush = new SolidColorBrush(_background);
-                //settings.Background = new SolidColorBrush(_background);
+                
+                settings.HeaderBrush = new SolidColorBrush(Colors.Black);
+                settings.Background = new SolidColorBrush(Colors.White);
+                settings.ContentBackgroundBrush = new SolidColorBrush(Colors.Black);
+                settings.ContentForegroundBrush = new SolidColorBrush(Colors.White);
                 //settings.Foreground = new SolidColorBrush(Colors.Black);
+
                 settings.HeaderText = "Pomidoro";
+                settings.Content = new PomidoroUserControl();
                 settings.IsOpen = true;
             });
 
